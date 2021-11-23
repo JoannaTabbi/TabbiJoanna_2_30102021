@@ -11,6 +11,7 @@ html {
   }
 body {
     font-family: Raleway, sans-serif;
+    overflow-x: hidden;
 }
 
 h1, h2 {
@@ -38,6 +39,33 @@ ul {
 }
 
 /* header styles */
+header {
+    margin: 0;
+    padding: 0 110px;
+    width: 100%;
+    height: 230px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+header img {
+    width: 140px;
+    height: 66px;
+    margin: 0;
+    padding: 0;
+    border: 1 px solid black;
+}
+nav li {
+    float: left;
+}
+nav a {
+    font-size: 23px;
+    padding:108px 30px 20px 30px;
+}
+nav a:hover {
+    color: #0065FC;
+    border-top: 2px solid #0065FC;
+}
 
 /* search bar section styles */
 
