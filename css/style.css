@@ -1,5 +1,7 @@
 /* fonts and global settings */
 
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
 html {  
     /* Set border-box as the global default */
     box-sizing: border-box;
@@ -16,7 +18,7 @@ body {
 
 h1, h2 {
     font-size: 32px;
-    font-weight: bold;
+    font-weight: bolder;
 }
 h3 {
     font-size: 23px;
@@ -41,9 +43,9 @@ ul {
 /* header styles */
 header {
     margin: 0;
-    padding: 0 110px;
+    padding: 0px 110px;
     width: 100%;
-    height: 230px;
+    height: 160px;
     display: flex;
     justify-content: space-between;
     align-items: center;    
@@ -59,12 +61,12 @@ nav li {
     float: left;
 }
 nav a {
-    font-size: 23px;
-    padding:108px 30px 20px 30px;
+    font-size: 24px;
+    padding:68px 30px 20px 30px;
 }
 nav a:hover {
     color: #0065FC;
-    border-top: 2px solid #0065FC;
+    border-top: 3px solid #0065FC;
 }
 
 /* search bar section styles */
@@ -76,24 +78,26 @@ nav a:hover {
 }
 form {
     position: relative;
-    width: 836px;
-    height: 96px;
-    line-height: 94px;
+    width: 600px;
+    height: 74px;
+    line-height: 72px;
     border: 2px solid #F2F2F2;
-    border-radius: 30px;
+    border-radius: 20px;
+    margin: 40px 0px;
 }
 form i {
     display: inline-block; 
     position: absolute;
     top: 0px 0px;
-    width: 94px;
-    height: 94px;
+    width: 72px;
+    height: 72px;
     border: 1px solid #F2F2F2; 
-    border-radius: 30px 0px 0px 30px;
+    border-radius: 18px 0px 0px 18px;
     background-color: #F2F2F2;
+    font-size: 24px;
     text-align: center;
-    padding-top: 28px;
-    padding-bottom: 34px;
+    padding-top: 23px;
+    padding-bottom: 25px;
 }
 input[type=search] {
     display: inline-block;
@@ -102,28 +106,30 @@ input[type=search] {
     left: 95px;
     width: 460px;
     font-size: 26px;
-    font-weight: bold;
+    font-weight: bolder;
     margin: 0;
-    padding: 30px 20px;
+    padding: 20px 10px;
     outline: none;
     border: none;
 }
 input::placeholder {
     color: black;
+    font-size: 26px;
+    font-weight: bolder;
 }
 input[type=submit] {
     position: absolute;
     top: 0;
     right: 0;
-    height: 94px;
-    width: 268px;
+    height: 70px;
+    width: 182px;
     font-size: 26px;
-    font-weight: bold;
+    font-weight: bolder;
     color: white;
     background-color: #0065FC;
     outline: none;
     margin: 0;
-    border-radius: 0 30px 30px 0;
+    border-radius: 0 18px 18px 0;
     border: 1px solid #0065FC;
 }    
 /* filters section styles */
