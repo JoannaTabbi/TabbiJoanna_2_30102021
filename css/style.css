@@ -15,21 +15,24 @@ body {
     font-family: Raleway, sans-serif;
     overflow-x: hidden;
 }
-
-h1, h2 {
-    font-size: 32px;
+h1q {
+    font-size: 1,42rem !important;
+    font-weight: bold;
+}
+h2 {
+    font-size: 1,42rem;
     font-weight: bold;
 }
 h3 {
-    font-size: 23px;
+    font-size: 1rem;
     font-weight: bold;
 }
 h4 {
-    font-size: 26px;
+    font-size: 1,15rem;
     font-weight: bold;
 }
 p {
-    font-size: 23px;
+    font-size: 1rem;
 }
 a {
     color: black;
@@ -59,7 +62,7 @@ nav li {
     float: left;
 }
 nav a {
-    font-size: 24px;
+    font-size: 1rem;
     padding:68px 30px 20px 30px;
 }
 nav a:hover {
@@ -92,7 +95,7 @@ form i {
     border: 1px solid #F2F2F2; 
     border-radius: 18px 0px 0px 18px;
     background-color: #F2F2F2;
-    font-size: 24px;
+    font-size: 1rem;
     text-align: center;
     padding-top: 23px;
     padding-bottom: 25px;
@@ -101,17 +104,20 @@ input[type=search] {
     display: inline-block;
     position: absolute;
     top: 0; 
-    left: 95px;
-    width: 460px;
-    font-size: 26px;
-    font-weight: bolder;
+    left: 72px;
+    width: 355px;
+    font-size: 1,15rem;
+    font-weight: bold;
     margin: 0;
-    padding: 20px 10px;
+    padding: 20px;
     border: none;
+}
+input[type=search]:focus {
+    outline: none;
 }
 input::placeholder {
     color: black;
-    font-size: 26px;
+    font-size: 1,15rem;
     font-weight: bolder;
 }
 input[type=submit] {
@@ -120,7 +126,7 @@ input[type=submit] {
     right: 0;
     height: 70px;
     width: 182px;
-    font-size: 26px;
+    font-size: 1,15rem;
     font-weight: bolder;
     color: white;
     background-color: #0065FC;
@@ -137,7 +143,7 @@ input[type=submit] {
 #filters h2 {
     float: left;
     line-height: 60px;
-    font-size: 26px;
+    font-size: 1,15rem;
     font-weight: bold;
     padding-right: 40px;
 }
@@ -148,7 +154,7 @@ input[type=submit] {
     top: 0;
     left: -84px;
     z-index: 2;
-    font-size: 26px;
+    font-size: 1,15rem;
     font-weight: bold;
     line-height: 66px;
     padding-left: 84px;
@@ -162,7 +168,7 @@ input[type=submit] {
     top: 0;
     left: 0;
     z-index: 3;
-    font-size: 26px;
+    font-size: 1,15rem;
     line-height: 74px;
     width: 74px;
     border-radius: 50%;
@@ -188,7 +194,7 @@ input[type=submit] {
     display: inline-block;
     line-height: 40px;
     width: 44px;
-    font-size: 16px;
+    font-size: 0,75rem;
     text-align: center;
     color: #0065FC;
     border: 2px solid #F2F2F2;
