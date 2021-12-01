@@ -15,28 +15,27 @@ html {
 }
 body {
   font-family: Raleway, sans-serif;
-  font-size: 1rem;
+  font-size: 0.875rem;
   overflow-x: hidden;
-  padding: 0 20px;
 }
 figure {
   margin: 0;
 }
 h1 {
-  font-size: 1.42rem;
+  font-size: 1.14rem;
   font-weight: bold;
   margin: 0;
 }
 h2 {
-  font-size: 1.42rem;
+  font-size: 1.14rem;
   font-weight: bold;
 }
 h3 {
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: bold;
 }
 h4 {
-  font-size: 1.15rem;
+  font-size: 1rem;
   font-weight: bold;
 }
 a {
@@ -52,7 +51,7 @@ img {
 }
 input,
 input::placeholder {
-  font-size: 1.15rem;
+  font-size: 1rem;
   font-weight: bold;
 }
 
@@ -67,26 +66,26 @@ header {
   margin: 0 auto;
 }
 header img {
-  max-width: 115px;
+  max-width: 90px;
   height: auto;
 }
 nav {
-  width: 27%;
+  width: 25%;
 }
 
 nav ul {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-evenly;
-  margin: 4px 0;
+  margin: 3px 0;
 }
 nav a {
-  padding: 48px 20px;
-  line-height: 110px;
+  padding: 35px 15px;
+  line-height: 88px;
 }
 nav a:hover {
   color: #0065fc;
-  border-top: 4px solid #0065fc;
+  border-top: 3px solid #0065fc;
 }
 main {
   display: flex;
@@ -104,30 +103,30 @@ main {
   height: auto;
 }
 #search_bar p {
-  margin: 12px 0;
+  margin: 8px 0;
 }
 form {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 20px 0;
+  margin: 12px 0;
   max-width: 350px;
   height: auto;
 }
 form i {
   background-color: #f2f2f2;
   text-align: center;
-  font-size: 1.25rem;
-  height: 52px;
-  line-height: 52px !important;
-  width: 52px;
-  border-radius: 18px 0 0 18px;
+  font-size: 0.875rem;
+  height: 42px;
+  line-height: 42px !important;
+  width: 42px;
+  border-radius: 15px 0 0 15px;
 }
 input[type="search"] {
   border-width: 2px 0 !important;
   border-style: solid;
   border-color: #f2f2f2;
-  line-height: 48px;
+  line-height: 38px;
   padding: 0 0 0 15px;
 }
 input[type="search"]:focus {
@@ -139,9 +138,9 @@ input::placeholder {
 input[type="submit"] {
   color: white;
   background-color: #0065fc;
-  border-radius: 0 18px 18px 0;
+  border-radius: 0 15px 15px 0;
   border: none;
-  padding: 0 20px;
+  padding: 0 14px;
 }
 input[type="submit"]:hover {
   cursor: pointer;
@@ -158,20 +157,21 @@ input[type="submit"]:hover {
 }
 #filters h2,
 #filters a {
-  font-size: 1.15rem;
+  font-size: 1rem;
   font-weight: bold;
 }
 #filters ul {
   display: flex;
   flex-flow: row wrap;
-  gap: 25px;
+  gap: 22px;
+  margin: 12px 0px;
 }
 #filters a {
   display: block;
-  padding: 0 20px 0 66px;
-  border: 4px solid #f2f2f2;
+  padding: 0 15px 0 52px;
+  border: 3px solid #f2f2f2;
   border-radius: 37px;
-  line-height: 48px;
+  line-height: 38px;
   
 }
 #filters a:hover {
@@ -179,17 +179,17 @@ input[type="submit"]:hover {
   border: none;
   color: #0065fc;
   box-shadow: 2px 2px 2px black;
-  font-size: 1.25rem;
-  line-height: 56px;
+  font-size: 1rem;
+  line-height: 44px;
 }
 #filters li > i {
-  font-size: 1.15rem;
+  font-size: 1rem;
   border-radius: 50%;
   color: #0065fc;
   background-color: #deebff;
   text-align: center;
-  line-height: 56px !important;
-  width: 56px;
+  line-height: 44px !important;
+  width: 44px;
   position: absolute;
 }
 #filters li {
@@ -198,7 +198,7 @@ input[type="submit"]:hover {
 #filters p {
   width: 100%;
   flex-basis: 100%;
-  margin-block-end: 32px;
+  margin-block-end: 25px;
 }
 #filters p > i {
   font-size: 0.75rem;
@@ -206,10 +206,10 @@ input[type="submit"]:hover {
   color: #0065fc;
   border: 2px solid #f2f2f2;
   border-radius: 50%;
-  line-height: 32px !important;
-  height: 32px;
-  width: 32px;
-  margin-right: 15px;
+  line-height: 21px !important;
+  height: 25px;
+  width: 25px;
+  margin-right: 10px;
 }
 #most_popular *,
 #accomodations * {
@@ -239,10 +239,10 @@ input[type="submit"]:hover {
   justify-content: space-between;
   align-items: stretch;
   order: 3;
-  flex-basis: 32%;
+  flex-basis: 30%;
 }
 #most_popular img {
-  max-width: 120px;
+  max-width: 115px;
   aspect-ratio: 1 / 1.05;
   border-radius: 15px 0 0 15px;
 }
@@ -273,7 +273,7 @@ input[type="submit"]:hover {
   color: #0065fc;
 }
 #most_popular p {
-  font-size: 0.875rem;
+  font-size: 0.8rem;
 }
 /* accomodations section styles */
 #accomodations {
@@ -283,14 +283,14 @@ input[type="submit"]:hover {
   align-content: space-evenly;
   order: 2;
   gap: 25px;
-  flex-basis: 65%;
+  flex-basis: 67%;
 }
 #accomodations h2,
 #accomodations > a {
   flex-basis: 100%;
 }
 #accomodations img {
-  max-width: 210px;
+  max-width: 205px;
   aspect-ratio: 1 / 0.487;
   border-radius: 15px 15px 0 0;
 }
@@ -314,11 +314,11 @@ input[type="submit"]:hover {
   font-size: 0.65rem;
 }
 #accomodations p {
-  font-size: 0.875rem;
+  font-size: 0.8rem;
   line-height: 1.8;
 }
 #accomodations > a {
-  font-size: 1.15rem;
+  font-size: 1rem;
   font-weight: bold;
 }
 #accomodations li {
