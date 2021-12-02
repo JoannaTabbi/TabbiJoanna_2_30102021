@@ -331,6 +331,7 @@ input[type="submit"]:hover {
   flex-direction: column;
   order: 4;
   flex-basis: 100%;
+  margin-top: 40px;
 }
 #activities img {
   width: 260px;
