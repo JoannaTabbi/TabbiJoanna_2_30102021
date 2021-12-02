@@ -351,11 +351,8 @@ input[type="submit"]:hover {
 #activities figcaption {
     padding-left: 15px;
 }
-#activities>div:first-child {
-    flex-basis: 1OO%;
-} 
-#activities>div:nth-child(4) {
-    flex-basis: 100%;
+#activities>div:first-child, #activities>div:nth-child(4) {
+  flex-basis: 100%;
 }
 #activities>div:nth-child(2) {
     flex-basis: 53%;
