@@ -56,7 +56,7 @@ input::placeholder {
   font-size: 1rem;
   font-weight: bold;
 }
-main *{
+main * {
   margin-block-start: 0;
   margin-block-end: 0;
 }
@@ -83,11 +83,12 @@ nav ul {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-evenly;
-  margin: 3px 0;
+  margin: 0;
+  line-height: 88px;
 }
 nav a {
   padding: 35px 15px;
-  line-height: 88px;
+  font-size: 0.875rem;
 }
 nav a:hover {
   color: #0065fc;
@@ -222,7 +223,14 @@ input[type="submit"]:hover {
 #accomodations {
   background-color: #f2f2f2;
   border-radius: 20px;
-  padding: 30px;
+  padding: 20px 20px;
+}
+#most_popular > *,
+#accomodations > * {
+  margin: 10px;
+}
+#most_popular {
+  order: 1;
 }
 #most_popular article,
 #accomodations article {
@@ -239,8 +247,11 @@ input[type="submit"]:hover {
   flex-direction: column;
   justify-content: space-between;
   align-items: stretch;
-  order: 3;
   flex-basis: 30%;
+}
+#most_popular h2 {
+  display: flex;
+  justify-content: space-between;
 }
 #most_popular img {
   max-width: 115px;
@@ -256,13 +267,14 @@ input[type="submit"]:hover {
 #most_popular figcaption {
   display: flex;
   flex-flow: column wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding: 10px;
 }
 #most_popular ul {
   display: flex;
   flex-flow: row nowrap;
   font-size: 0.65rem;
+  margin-top: auto;
 }
 
 #most_popular li,
@@ -282,9 +294,8 @@ input[type="submit"]:hover {
   flex-flow: row wrap;
   justify-content: space-between;
   align-content: space-between;
-  order: 2;
   flex-basis: 67%;
-  height: 550px;
+  height: auto;
 }
 #accomodations h2,
 #accomodations > a {
@@ -329,25 +340,28 @@ input[type="submit"]:hover {
 /* activities section styles */
 #activities {
   display: flex;
-  flex-direction: column;
-  order: 4;
+  flex-flow: row wrap;
+  justify-content: space-between;
   flex-basis: 100%;
   margin-top: 30px;
-}
-#activities h2 {
-  line-height: 60px;
+  order: 1;
+  height: auto;
 }
 #activities img {
   width: 260px;
   border-radius: 18px 18px 0 0;
 }
-#activities > div {
+#activities h2 {
+  margin: 16px 0;
+  flex: 0 0 100%;
+}
+#activities div {
+  flex: 0 0 22%;
   display: flex;
   flex-flow: column wrap;
   justify-content: space-between;
-  align-content: space-between;
-  height: 384px;
-  flex-basis: auto;
+  align-items: center;
+  height: auto;
 }
 #activities figure {
   background-color: white;
@@ -357,22 +371,6 @@ input[type="submit"]:hover {
 #activities figcaption {
   padding-left: 15px;
   line-height: 44px;
-}
-#activities > div:first-child,
-#activities > div:nth-child(4) {
-  flex: 0 0 384px;
-}
-#activities > div:nth-child(2) {
-  flex: 0 0 202px;
-}
-#activities > div:nth-child(3) {
-  flex: 0 0 141px;
-}
-#activities > div:nth-child(5) {
-  flex: 0 0 167px;
-}
-#activities > div:nth-child(6) {
-  flex: 0 0 178px;
 }
 
 /* footer styles */
