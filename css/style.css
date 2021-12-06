@@ -285,8 +285,9 @@ input[type="submit"]:hover {
 .active {
   color: #0065fc;
 }
-#most_popular p {
+#most_popular p, #accomodations p {
   font-size: 0.8rem;
+  line-height: 1.8;
 }
 /* accomodations section styles */
 #accomodations {
@@ -324,10 +325,6 @@ input[type="submit"]:hover {
   display: flex;
   flex-flow: row nowrap;
   font-size: 0.65rem;
-}
-#accomodations p {
-  font-size: 0.8rem;
-  line-height: 1.8;
 }
 #accomodations > a {
   font-size: 1rem;
