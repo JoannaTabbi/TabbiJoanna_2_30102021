@@ -80,18 +80,25 @@ nav {
 }
 nav ul {
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-evenly;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
   margin: 0;
-  line-height: 88px;
+  height: 90px;
 }
-nav a {
-  padding: 35px 15px;
+nav li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 0.875rem;
+  flex: 1 1 auto;
+  height: 100%;
 }
-nav a:hover {
+nav li:hover {
+  border-top: 2px solid #0065fc;
+}
+nav li:hover a {
   color: #0065fc;
-  border-top: 3px solid #0065fc;
 }
 main {
   display: flex;
@@ -106,10 +113,14 @@ main {
   flex-direction: column;
   width: 100%;
   flex-basis: 100%;
-  height: auto;
 }
 #search_bar p {
   margin: 8px 0;
+}
+#search_bar i, #filters i {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
 form {
   display: flex;
@@ -121,10 +132,8 @@ form {
 }
 form i {
   background-color: #f2f2f2;
-  text-align: center;
   font-size: 0.875rem;
   height: 42px;
-  line-height: 42px !important;
   width: 42px;
   border-radius: 15px 0 0 15px;
 }
@@ -184,11 +193,6 @@ input[type="submit"]:hover {
 #filters li:first-child {
   border: none;
   border-radius: none;
-}
-#filters i {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
 }
 #filters li:hover {
   background-color: #deebff;
