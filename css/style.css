@@ -2,7 +2,6 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap");
 
-
 /******* GLOBAL SETTINGS *******/
 
 html {
@@ -29,9 +28,6 @@ a {
 ul {
   list-style: none;
   padding-left: 0;
-}
-img {
-  object-fit: cover;
 }
 
 /******* HEADER *******/
@@ -105,7 +101,8 @@ main * {
 #search_bar p {
   margin: 8px 0;
 }
-#search_bar i, #filters i {
+#search_bar i,
+#filters i {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -207,10 +204,10 @@ main * {
   width: 45px;
   margin-left: -4px;
 }
-#filters li:hover>i {
+#filters li:hover > i {
   background-color: #0065fc;
   color: #deebff;
-}  
+}
 #filters p {
   flex-basis: 100%;
   margin-top: 12px;
@@ -240,20 +237,34 @@ main * {
   border-radius: 18px;
   box-shadow: 2px 2px 10px #e0e0e0;
 }
-#most_popular h2, #accomodations h2, #activities h2 {
+#most_popular h2,
+#accomodations h2,
+#activities h2 {
   font-size: 1.25rem;
   font-weight: bold;
 }
-#most_popular h3, #accomodations h3, #activities h3 {
+#most_popular h3,
+#accomodations h3,
+#activities h3 {
   font-size: 1rem;
   font-weight: bold;
 }
-#most_popular p, #accomodations p {
+#most_popular p,
+#accomodations p {
   font-size: 0.875rem;
   line-height: 1.8;
 }
+#most_popular li,
+#accomodations li {
+  color: #f2f2f2;
+}
 .active {
   color: #0065fc;
+}
+#most_popular img,
+#accomodations img,
+#activities img {
+  object-fit: cover;
 }
 
 /******* MOST POPULAR SECTION  *******/
@@ -299,10 +310,6 @@ main * {
   flex-direction: row;
   font-size: 0.7rem;
   margin-top: auto;
-}
-#most_popular li,
-#accomodations li {
-  color: #f2f2f2;
 }
 
 /******* ACCOMODATIONS SECTION *******/
@@ -370,7 +377,7 @@ main * {
 }
 #activities div {
   height: 385px;
-  flex-basis: 23%; 
+  flex-basis: 23%;
 }
 #activities figure {
   display: flex;
