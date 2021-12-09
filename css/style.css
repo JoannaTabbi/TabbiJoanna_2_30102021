@@ -395,8 +395,11 @@ main * {
   border-radius: 18px 18px 0 0;
 }
 #activities figcaption {
-  flex-basis: 50px;
-  padding: 15px 10px;
+  display: flex;
+  align-items: center;
+  flex-basis: 48px;
+  min-height: 48px;
+  padding: 0 15px;
 }
 #activities div:nth-child(odd) {
   display: flex;
