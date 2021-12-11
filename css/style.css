@@ -523,7 +523,7 @@ footer a {
 
 @media screen and (max-width: 768px) {
   #accomodations article {
-    flex-basis: 47%;
+    flex-basis: 48%;
   }
   footer {
     margin-top: 20px;
