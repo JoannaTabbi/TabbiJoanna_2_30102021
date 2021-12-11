@@ -487,7 +487,6 @@ footer a {
   #activities {
     order: 1;
     flex-flow: column nowrap;
-    padding: 0 25px;
   }
   #activities h2 {
     flex-basis: 0;
