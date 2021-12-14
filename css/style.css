@@ -75,8 +75,7 @@ nav li:hover a {
 
 main {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
+  flex-flow: column nowrap;
   max-width: 1150px;
   margin: 0 auto;
 }
@@ -91,7 +90,6 @@ main * {
   display: flex;
   flex-direction: column;
   width: 100%;
-  flex-basis: 100%;
 }
 #search_bar h1 {
   font-size: 1.25rem;
@@ -114,7 +112,7 @@ main * {
   margin: 15px 0;
   height: auto;
 }
-#search_bar form i {
+#search_bar form label > i {
   background-color: #f2f2f2;
   font-size: 0.9rem;
   height: 44px;
@@ -128,28 +126,43 @@ main * {
   color: black;
   opacity: 1;
 }
-#search_bar input[type="search"] {
+#search_bar input {
+  max-width: 250px;
+  width: 100%;
   border-width: 2px 0 !important;
   border-style: solid;
   border-color: #f2f2f2;
   line-height: 40px;
   padding: 0 0 0 15px;
 }
-#search_bar input[type="search"]:focus {
+#search_bar input:focus {
   outline: none;
 }
-#search_bar input[type="submit"] {
+#search_bar button {
+  display: flex;
+  outline: none;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+#search_bar button > span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 1.1rem;
+  font-weight: bold;
   color: white;
   background-color: #0065fc;
   border-radius: 0 15px 15px 0;
   border: none;
   padding: 0 14px;
 }
-#search_bar input[type="submit"]:hover,
 #search_bar button:hover {
   cursor: pointer;
 }
-#search_bar button {
+#search_bar button > i {
   display: none;
 }
 
@@ -159,13 +172,16 @@ main * {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
-  align-content: center;
+  align-items: center;
   flex-basis: 100%;
 }
 #filters h2,
 #filters a {
   font-size: 1.1rem;
   font-weight: bold;
+}
+#filters h2 {
+  margin-right: 25px;
 }
 #filters a {
   padding: 0 15px;
@@ -190,14 +206,6 @@ main * {
   background-color: #deebff;
   color: #0065fc;
   font-size: 1.1rem;
-}
-#filters li:first-child {
-  border: none;
-}
-#filters li:first-child:hover {
-  background-color: inherit;
-  color: inherit;
-  padding: 0;
 }
 #filters li > i {
   font-size: 1rem;
@@ -229,6 +237,11 @@ main * {
 
 /******* CARDS SECTIONS - COMMON FEATURES *******/
 
+main > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 #accomodations,
 #most_popular {
   background-color: #f2f2f2;
@@ -369,16 +382,16 @@ main * {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  flex-basis: 100%;
+  width: 100%;
   margin-top: 30px;
 }
 #activities h2 {
   margin: 16px 0;
-  flex-basis: 100%;
+  width: 100%;
 }
 #activities div {
   height: 385px;
-  flex-basis: 23%;
+  width: 23%;
 }
 #activities a {
   display: block;
@@ -402,7 +415,7 @@ main * {
 #activities figcaption {
   display: flex;
   align-items: center;
-  flex-basis: 48px;
+  height: 48px;
   min-height: 48px;
   padding: 0 15px;
 }
@@ -470,6 +483,8 @@ footer a {
 
 @media screen and (max-width: 992px) {
   header {
+    padding-left: 0;
+    padding-right: 0;
     flex-direction: column;
     margin: 30px auto;
   }
@@ -477,7 +492,7 @@ footer a {
     width: 100%;
   }
   nav li {
-    flex-basis: 0;
+    flex-basis: 50%;
   }
   nav li:hover {
     border-top: none;
@@ -487,27 +502,25 @@ footer a {
     margin-top: 0;
     margin-bottom: -2px;
   }
+  main > div {
+    display: flex;
+    flex-direction: column-reverse;
+  }
   #most_popular {
     flex-basis: 100%;
     margin-bottom: 20px;
   }
   #accomodations {
-    order: 1;
     flex-basis: 100%;
   }
   #accomodations figcaption {
     padding-bottom: 10px;
   }
   #activities {
-    order: 1;
     flex-flow: column nowrap;
-  }
-  #activities h2 {
-    flex-basis: 0;
   }
   #activities div {
     height: 200px;
-    max-height: 200px;
     width: 100%;
     margin-bottom: 20px;
   }
@@ -548,7 +561,7 @@ footer a {
 
 @media screen and (max-width: 576px) {
   nav ul {
-    height: 50px;
+    height: 75px;
   }
   #search_bar,
   #filters,
@@ -556,10 +569,10 @@ footer a {
     padding-left: 25px;
     padding-right: 25px;
   }
-  #search_bar input[type="submit"] {
+  #search_bar button > span {
     display: none;
   }
-  #search_bar button {
+  #search_bar button > i {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -570,9 +583,6 @@ footer a {
     border: none;
     height: 44px;
     width: 44px;
-  }
-  #filters li:first-child {
-    flex-basis: 100%;
   }
   #most_popular {
     background-color: #f2f2f2;
@@ -585,16 +595,32 @@ footer a {
     flex-basis: 100%;
   }
   #activities {
-    height: 1160px;
     justify-content: flex-start;
   }
-  #activities div {
-    flex-basis: 100%;
+  #activities div:nth-child(odd) {
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    height: 400px;
+    max-height: 400px;
+    margin-bottom: 40px;
   }
   #activities div:nth-child(odd) article {
-    flex-basis: 100%;
+    height: 50%;
+    max-height: 50%;
+    min-height: 50%;
   }
-  #activities div:nth-child(odd) article:first-child {
+  #activities div:nth-child(3) article:first-child {
+    width: 100%;
     margin-bottom: 20px;
+  }
+  #activities div:nth-child(3) article:last-child {
+    width: 100%;
+  }
+  #activities div:last-child article:first-child {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  #activities div:last-child article:last-child {
+    width: 100%;
   }
 }

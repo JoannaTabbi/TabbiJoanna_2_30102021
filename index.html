@@ -17,7 +17,6 @@
     ></script>
   </head>
   <body>
-
     <!--     HEADER     -->
 
     <header>
@@ -33,7 +32,6 @@
     <!--     MAIN     -->
 
     <main>
-
       <!--     SEARCH BAR SECTION     -->
 
       <section id="search_bar">
@@ -49,16 +47,18 @@
             id="destination"
             placeholder="Marseille, France"
           />
-          <input type="submit" value="Rechercher" />
-          <button type="submit" class="fas fa-search"></button>
+          <button type="submit">
+            <span>Rechercher</span>
+            <i class="fas fa-search"></i>
+          </button>
         </form>
       </section>
 
       <!--     FILTERS SECTION     -->
 
       <section id="filters">
+        <h2>Filtres</h2>
         <ul>
-          <li><h2>Filtres</h2></li>
           <li>
             <i class="fas fa-money-bill-wave"></i
             ><a href="#">&Eacute;conomique</a>
@@ -75,217 +75,219 @@
 
       <!--     ACCOMODATIONS SECTION     -->
 
-      <section id="accomodations">
-        <!--acc heading-->
-        <h2>Hébergements à Marseille</h2>
-        <!--acc hotel 1-->
-        <article>
-          <a href="#">
-            <figure>
-              <img
-                src="./assets/img/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
-                alt="dortoir avec lits superposés et deux fenêtres donnant sur la rue"
-              />
-              <figcaption>
-                <h3>Auberge La Cannebière</h3>
-                <p>Nuit à partir de <strong>25€</strong></p>
-                <ul>
-                  <li><i class="fas fa-star active"></i></li>
-                  <li><i class="fas fa-star active"></i></li>
-                  <li><i class="fas fa-star active"></i></li>
-                  <li><i class="fas fa-star active"></i></li>
-                  <li><i class="fas fa-star"></i></li>
-                </ul>
-              </figcaption>
-            </figure>
-          </a>
-        </article>
-        <!--acc hotel 2-->
-        <article>
-          <a href="#">
-            <figure>
-              <img
-                src="./assets/img/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
-                alt="chambre au décor cosy avec deux lits séparés et climatiseur"
-              />
-              <figcaption>
-                <h3>Hôtel du port</h3>
-                <p>Nuit à partir de 52<strong>€</strong></p>
-                <ul>
-                  <li><i class="fas fa-star active"></i></li>
-                  <li><i class="fas fa-star active"></i></li>
-                  <li><i class="fas fa-star active"></i></li>
-                  <li><i class="fas fa-star active"></i></li>
-                  <li><i class="fas fa-star active"></i></li>
-                </ul>
-              </figcaption>
-            </figure>
-          </a>
-        </article>
-        <!--acc hotel 3-->
-        <article>
-          <a href="#">
-            <figure>
-              <img
-                src="./assets/img/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
-                alt="chambre avec deux lits simples et grande armoire"
-              />
-              <figcaption>
-                <h3>Hôtel Les mouettes</h3>
-                <p>Nuit à partir de 76<strong>€</strong></p>
-                <ul>
-                  <li><i class="fas fa-star active"></i></li>
-                  <li><i class="fas fa-star active"></i></li>
-                  <li><i class="fas fa-star active"></i></li>
-                  <li><i class="fas fa-star active"></i></li>
-                  <li><i class="fas fa-star"></i></li>
-                </ul>
-              </figcaption>
-            </figure>
-          </a>
-        </article>
-        <!--acc hotel 4-->
-        <article>
-          <a href="#">
-            <figure>
-              <img
-                src="./assets/img/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
-                alt="chambre en style marin avec lit double et tableau sur le mur"
-              />
-              <figcaption>
-                <h3>Hôtel de la mer</h3>
-                <p>Nuit à partir de 46<strong>€</strong></p>
-                <ul>
-                  <li><i class="fas fa-star active"></i></li>
-                  <li><i class="fas fa-star active"></i></li>
-                  <li><i class="fas fa-star active"></i></li>
-                  <li><i class="fas fa-star"></i></li>
-                  <li><i class="fas fa-star"></i></li>
-                </ul>
-              </figcaption>
-            </figure>
-          </a>
-        </article>
-        <!--acc hotel 5-->
-        <article>
-          <a href="#">
-            <figure>
-              <img
-                src="./assets/img/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
-                alt="dortoir avec lits superposés et boiseries rustques"
-              />
-              <figcaption>
-                <h3>Auberge Le Panier</h3>
-                <p>Nuit à partir de <strong>23€</strong></p>
-                <ul>
-                  <li><i class="fas fa-star active"></i></li>
-                  <li><i class="fas fa-star active"></i></li>
-                  <li><i class="fas fa-star active"></i></li>
-                  <li><i class="fas fa-star active"></i></li>
-                  <li><i class="fas fa-star"></i></li>
-                </ul>
-              </figcaption>
-            </figure>
-          </a>
-        </article>
-        <!--acc hotel 6-->
-        <article>
-          <a href="#">
-            <figure>
-              <img
-                src="./assets/img/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
-                alt="chambre avec deux lits séparés, bureau et post télé"
-              />
-              <figcaption>
-                <h3>Hôtel chez Amina</h3>
-                <p>Nuit à partir de 96<strong>€</strong></p>
-                <ul>
-                  <li><i class="fas fa-star active"></i></li>
-                  <li><i class="fas fa-star active"></i></li>
-                  <li><i class="fas fa-star active"></i></li>
-                  <li><i class="fas fa-star active"></i></li>
-                  <li><i class="fas fa-star active"></i></li>
-                </ul>
-              </figcaption>
-            </figure>
-          </a>
-        </article>
-        <!--ac read more-->
-        <a href="#">Afficher plus</a>
-      </section>
+      <div>
+        <section id="accomodations">
+          <!--acc heading-->
+          <h2>Hébergements à Marseille</h2>
+          <!--acc hotel 1-->
+          <article>
+            <a href="#">
+              <figure>
+                <img
+                  src="./assets/img/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                  alt="dortoir avec lits superposés et deux fenêtres donnant sur la rue"
+                />
+                <figcaption>
+                  <h3>Auberge La Cannebière</h3>
+                  <p>Nuit à partir de <strong>25€</strong></p>
+                  <ul>
+                    <li><i class="fas fa-star active"></i></li>
+                    <li><i class="fas fa-star active"></i></li>
+                    <li><i class="fas fa-star active"></i></li>
+                    <li><i class="fas fa-star active"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                  </ul>
+                </figcaption>
+              </figure>
+            </a>
+          </article>
+          <!--acc hotel 2-->
+          <article>
+            <a href="#">
+              <figure>
+                <img
+                  src="./assets/img/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
+                  alt="chambre au décor cosy avec deux lits séparés et climatiseur"
+                />
+                <figcaption>
+                  <h3>Hôtel du port</h3>
+                  <p>Nuit à partir de 52<strong>€</strong></p>
+                  <ul>
+                    <li><i class="fas fa-star active"></i></li>
+                    <li><i class="fas fa-star active"></i></li>
+                    <li><i class="fas fa-star active"></i></li>
+                    <li><i class="fas fa-star active"></i></li>
+                    <li><i class="fas fa-star active"></i></li>
+                  </ul>
+                </figcaption>
+              </figure>
+            </a>
+          </article>
+          <!--acc hotel 3-->
+          <article>
+            <a href="#">
+              <figure>
+                <img
+                  src="./assets/img/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+                  alt="chambre avec deux lits simples et grande armoire"
+                />
+                <figcaption>
+                  <h3>Hôtel Les mouettes</h3>
+                  <p>Nuit à partir de 76<strong>€</strong></p>
+                  <ul>
+                    <li><i class="fas fa-star active"></i></li>
+                    <li><i class="fas fa-star active"></i></li>
+                    <li><i class="fas fa-star active"></i></li>
+                    <li><i class="fas fa-star active"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                  </ul>
+                </figcaption>
+              </figure>
+            </a>
+          </article>
+          <!--acc hotel 4-->
+          <article>
+            <a href="#">
+              <figure>
+                <img
+                  src="./assets/img/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+                  alt="chambre en style marin avec lit double et tableau sur le mur"
+                />
+                <figcaption>
+                  <h3>Hôtel de la mer</h3>
+                  <p>Nuit à partir de 46<strong>€</strong></p>
+                  <ul>
+                    <li><i class="fas fa-star active"></i></li>
+                    <li><i class="fas fa-star active"></i></li>
+                    <li><i class="fas fa-star active"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                  </ul>
+                </figcaption>
+              </figure>
+            </a>
+          </article>
+          <!--acc hotel 5-->
+          <article>
+            <a href="#">
+              <figure>
+                <img
+                  src="./assets/img/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
+                  alt="dortoir avec lits superposés et boiseries rustques"
+                />
+                <figcaption>
+                  <h3>Auberge Le Panier</h3>
+                  <p>Nuit à partir de <strong>23€</strong></p>
+                  <ul>
+                    <li><i class="fas fa-star active"></i></li>
+                    <li><i class="fas fa-star active"></i></li>
+                    <li><i class="fas fa-star active"></i></li>
+                    <li><i class="fas fa-star active"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                  </ul>
+                </figcaption>
+              </figure>
+            </a>
+          </article>
+          <!--acc hotel 6-->
+          <article>
+            <a href="#">
+              <figure>
+                <img
+                  src="./assets/img/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
+                  alt="chambre avec deux lits séparés, bureau et post télé"
+                />
+                <figcaption>
+                  <h3>Hôtel chez Amina</h3>
+                  <p>Nuit à partir de 96<strong>€</strong></p>
+                  <ul>
+                    <li><i class="fas fa-star active"></i></li>
+                    <li><i class="fas fa-star active"></i></li>
+                    <li><i class="fas fa-star active"></i></li>
+                    <li><i class="fas fa-star active"></i></li>
+                    <li><i class="fas fa-star active"></i></li>
+                  </ul>
+                </figcaption>
+              </figure>
+            </a>
+          </article>
+          <!--ac read more-->
+          <a href="#">Afficher plus</a>
+        </section>
 
-      <!--     MOST POPULAR SECTION     -->
+        <!--     MOST POPULAR SECTION     -->
 
-      <section id="most_popular">
-        <!--mp heading-->
-        <h2>Les plus populaires<i class="fas fa-chart-line"></i></h2>
-        <!--mp hotel 1-->
-        <article>
-          <a href="#">
-            <figure>
-              <img
-                src="./assets/img/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
-                alt="chambre de l'hôtel style classique avec lit double et mirroir"
-              />
-              <figcaption>
-                <h3>Hôtel Le soleil du matin</h3>
-                <p>Nuit à partir de 128<strong>€</strong></p>
-                <ul>
-                  <li><i class="fas fa-star active"></i></li>
-                  <li><i class="fas fa-star active"></i></li>
-                  <li><i class="fas fa-star active"></i></li>
-                  <li><i class="fas fa-star active"></i></li>
-                  <li><i class="fas fa-star active"></i></li>
-                </ul>
-              </figcaption>
-            </figure>
-          </a>
-        </article>
-        <!--mp hotel 2-->
-        <article>
-          <a href="#">
-            <figure>
-              <img
-                src="./assets/img/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
-                alt="chambre en style moderne avec lit double et mezzanine"
-              />
-              <figcaption>
-                <h3>Au cœur de l'eau Chambres d'hôtes</h3>
-                <p>Nuit à partir de 71<strong>€</strong></p>
-                <ul>
-                  <li><i class="fas fa-star active"></i></li>
-                  <li><i class="fas fa-star active"></i></li>
-                  <li><i class="fas fa-star active"></i></li>
-                  <li><i class="fas fa-star active"></i></li>
-                  <li><i class="fas fa-star"></i></li>
-                </ul>
-              </figcaption>
-            </figure>
-          </a>
-        </article>
-        <!--mp hotel 3-->
-        <article>
-          <a href="#">
-            <figure>
-              <img
-                src="./assets/img/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
-                alt="lit double d'une chambre d'hôtel en style fonctionnel avec tables de chevet"
-              />
-              <figcaption>
-                <h3>Hôtel Tout bleu et Blanc</h3>
-                <p>Nuit à partir de 68<strong>€</strong></p>
-                <ul>
-                  <li><i class="fas fa-star active"></i></li>
-                  <li><i class="fas fa-star active"></i></li>
-                  <li><i class="fas fa-star active"></i></li>
-                  <li><i class="fas fa-star active"></i></li>
-                  <li><i class="fas fa-star"></i></li>
-                </ul>
-              </figcaption>
-            </figure>
-          </a>
-        </article>
-      </section>
+        <section id="most_popular">
+          <!--mp heading-->
+          <h2>Les plus populaires<i class="fas fa-chart-line"></i></h2>
+          <!--mp hotel 1-->
+          <article>
+            <a href="#">
+              <figure>
+                <img
+                  src="./assets/img/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+                  alt="chambre de l'hôtel style classique avec lit double et mirroir"
+                />
+                <figcaption>
+                  <h3>Hôtel Le soleil du matin</h3>
+                  <p>Nuit à partir de 128<strong>€</strong></p>
+                  <ul>
+                    <li><i class="fas fa-star active"></i></li>
+                    <li><i class="fas fa-star active"></i></li>
+                    <li><i class="fas fa-star active"></i></li>
+                    <li><i class="fas fa-star active"></i></li>
+                    <li><i class="fas fa-star active"></i></li>
+                  </ul>
+                </figcaption>
+              </figure>
+            </a>
+          </article>
+          <!--mp hotel 2-->
+          <article>
+            <a href="#">
+              <figure>
+                <img
+                  src="./assets/img/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
+                  alt="chambre en style moderne avec lit double et mezzanine"
+                />
+                <figcaption>
+                  <h3>Au cœur de l'eau Chambres d'hôtes</h3>
+                  <p>Nuit à partir de 71<strong>€</strong></p>
+                  <ul>
+                    <li><i class="fas fa-star active"></i></li>
+                    <li><i class="fas fa-star active"></i></li>
+                    <li><i class="fas fa-star active"></i></li>
+                    <li><i class="fas fa-star active"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                  </ul>
+                </figcaption>
+              </figure>
+            </a>
+          </article>
+          <!--mp hotel 3-->
+          <article>
+            <a href="#">
+              <figure>
+                <img
+                  src="./assets/img/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
+                  alt="lit double d'une chambre d'hôtel en style fonctionnel avec tables de chevet"
+                />
+                <figcaption>
+                  <h3>Hôtel Tout bleu et Blanc</h3>
+                  <p>Nuit à partir de 68<strong>€</strong></p>
+                  <ul>
+                    <li><i class="fas fa-star active"></i></li>
+                    <li><i class="fas fa-star active"></i></li>
+                    <li><i class="fas fa-star active"></i></li>
+                    <li><i class="fas fa-star active"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                  </ul>
+                </figcaption>
+              </figure>
+            </a>
+          </article>
+        </section>
+      </div>
 
       <!--     ACTIVITIES SECTION     -->
 
