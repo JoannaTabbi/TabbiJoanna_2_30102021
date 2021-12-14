@@ -186,6 +186,7 @@ main * {
 #filters a {
   padding: 0 15px;
   color: inherit;
+  line-height: 45px;
 }
 #filters ul {
   display: flex;
