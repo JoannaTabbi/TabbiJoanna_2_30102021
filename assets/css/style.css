@@ -129,7 +129,7 @@ main * {
 #search_bar input {
   max-width: 250px;
   width: 100%;
-  border-width: 2px 0 !important;
+  border-width: 2px 0;
   border-style: solid;
   border-color: #f2f2f2;
   line-height: 40px;
@@ -494,6 +494,7 @@ footer a {
   }
   nav li {
     flex-basis: 50%;
+    border-bottom: 2px solid #f2f2f2;
   }
   nav li:hover {
     border-top: none;
@@ -501,7 +502,7 @@ footer a {
   }
   nav li:hover a {
     margin-top: 0;
-    margin-bottom: -2px;
+    
   }
   main > div {
     display: flex;
